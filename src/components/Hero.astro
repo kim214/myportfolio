@@ -69,8 +69,9 @@ const { config } = Astro.props;
                 src={config.avatar}
                 alt=`${config.firstName} ${config.lastName} Avatar`
                 class="object-cover w-full h-full rounded-full noDrag"
-                width="180"
-                height="180"
+                width="460"
+                height="460"
+                densities={[1, 2]}
                 priority
             />
         </div>

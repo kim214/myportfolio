@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
 
-const currentYear = new Date().getFullYear();
 const { config } = Astro.props;
 ---
 
@@ -54,5 +53,5 @@ const { config } = Astro.props;
         }
     </div>
 
-    <span>© Copyright 2023-{currentYear} ChiragChrg</span>
+    <span>{config.copyrightText}</span>
 </footer>

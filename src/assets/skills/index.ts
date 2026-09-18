@@ -5,7 +5,9 @@ import JsIcon from "./javascript.svg";
 import TsIcon from "./typescript.svg";
 import PythonIcon from "./python.svg";
 import CppIcon from "./cpp.svg";
+import CIcon from "./c.svg";
 import JavaIcon from "./java.svg";
+import KotlinIcon from "./kotlin.svg";
 import CSharpIcon from "./csharp.svg";
 import PhpIcon from "./php.svg";
 import RIcon from "./r.svg";
@@ -64,6 +66,9 @@ import PostmanIcon from "./postman.svg";
 import SwaggerIcon from "./swagger.svg";
 import OpenTelemetryIcon from "./opentelemetry.svg";
 import StreamlitIcon from "./streamlit.svg";
+import TensorFlowIcon from "./tensorflow.svg";
+import ArduinoIcon from "./arduino.svg";
+import MqttIcon from "./mqtt.svg";
 
 // Configuration & Templating
 import YamlIcon from "./yaml.svg";
@@ -85,7 +90,9 @@ export default {
     TsIcon,
     PythonIcon,
     CppIcon,
+    CIcon,
     JavaIcon,
+    KotlinIcon,
     CSharpIcon,
     PhpIcon,
     RIcon,
@@ -144,6 +151,9 @@ export default {
     SwaggerIcon,
     OpenTelemetryIcon,
     StreamlitIcon,
+    TensorFlowIcon,
+    ArduinoIcon,
+    MqttIcon,
 
     // Configuration & Templating
     YamlIcon,

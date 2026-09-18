@@ -1,4 +1,4 @@
-export { default as LogoIcon } from "./C.svg"
+export { default as LogoIcon } from "./N.svg"
 export { default as ContactArt } from "./ContactVector.svg"
 
 //Social Icons
@@ -10,3 +10,4 @@ export { default as LinkedinIcon } from "./Linkedin.svg"
 export { default as TwitterIcon } from "./Twitter.svg"
 export { default as FaceBookIcon } from "./Facebook.svg"
 export { default as DiscordIcon } from "./Discord.svg"
+export { default as WhatsappIcon } from "./Whatsapp.svg"

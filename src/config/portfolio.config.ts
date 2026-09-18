@@ -3,10 +3,9 @@ import { Avatar_180, Avatar_250 } from "@assets/images";
 // Importing SVGs as raw strings
 import GithubIconRaw from "@assets/SVGs/Github.svg?raw";
 import LinkedinIconRaw from "@assets/SVGs/Linkedin.svg?raw";
-import TwitterIconRaw from "@assets/SVGs/Twitter.svg?raw";
-import InstagramIconRaw from "@assets/SVGs/Instagram.svg?raw";
 import GoogleIconRaw from "@assets/SVGs/Google.svg?raw";
-import DiscordIconRaw from "@assets/SVGs/Discord.svg?raw";
+import GmailIconRaw from "@assets/SVGs/Gmail.svg?raw";
+import WhatsappIconRaw from "@assets/SVGs/Whatsapp.svg?raw";
 
 import { LogoIcon } from "@/assets/SVGs";
 import { ThemeOptions } from "../../scripts/generateThemes";
@@ -14,15 +13,56 @@ import { ThemeOptions } from "../../scripts/generateThemes";
 // Theme Configuration
 export const themeConfig = ThemeOptions.DEFAULT;
 
+const GITHUB_URL = "https://github.com/kim214";
+const LINKEDIN_URL = "https://www.linkedin.com/in/nathan-kimutai-163a9036b/";
+const EMAIL = "nathankimutai48@gmail.com";
+const WHATSAPP_URL = "https://wa.me/254753390828";
+const SITE_URL = "https://nathankimutai.netlify.app/";
+
+export const socialLinks = [
+    {
+        label: "GitHub",
+        url: GITHUB_URL,
+        icon: GithubIconRaw
+    },
+    {
+        label: "LinkedIn",
+        url: LINKEDIN_URL,
+        icon: LinkedinIconRaw
+    },
+    {
+        label: "Email",
+        url: `mailto:${EMAIL}`,
+        icon: GmailIconRaw
+    },
+    {
+        label: "WhatsApp",
+        url: WHATSAPP_URL,
+        icon: WhatsappIconRaw
+    },
+    {
+        label: "Google Search",
+        url: "https://www.google.com/search?q=Nathan+Kimutai+Lotobo",
+        icon: GoogleIconRaw
+    }
+];
+
 // Site Configuration
 export const siteConfig = {
-    title: "Chirag Chrg | Fullstack Software Engineer & Web Developer",
-    description: "Chirag Chrg is a full stack software engineer building high-performance, interactive web applications, real-time systems, and scalable digital experiences.",
-    canonical: "https://chiragchrg.netlify.app/",
-    googleSiteVerification: "YRAUUyc8TP4QJ1s53KAdLxcON9xifQf33BnLeP-F_5Y",
-    keywords: "Chirag Chrg, ChiragChrg, Fullstack Software Engineer, Fullstack Web Developer, React Developer, Node.js Developer, TypeScript Developer, UI/UX Engineer, Frontend Developer, Backend Developer, JavaScript Developer, Portfolio, Vortexa, ARMS, ARMS 2.0, ARMS v3, Academic Resource Management System, xrecon, Oriv, Oriv.io, Epitome, Epitome 2k24, AIMIT, I create exciting stuff on the internet, Modern Web Apps, Scalable Web Applications",
-    avatar: "https://raw.githubusercontent.com/ChiragChrg/ChiragChrg.github.io/main/Avatar.webp",
-    siteUrl: "https://chiragchrg.netlify.app/",
+    title: "Nathan Kimutai | Software Engineer & AI Engineer",
+    description: "Nathan Kimutai Lotobo is a software, frontend, and AI engineer building intelligent applications, secure systems, and IoT solutions across web, mobile, and infrastructure.",
+    canonical: SITE_URL,
+    googleSiteVerification: "",
+    keywords: "Nathan Kimutai, Nathan Kimutai Lotobo, Software Engineer, AI Engineer, Frontend Engineer, React Native Developer, Python Developer, IoT Engineer, Kabarak University, RecruitIQ, GreenTech, MahindAI, AIFAA, African Union Students Platform, Kenya",
+    avatar: "https://avatars.githubusercontent.com/u/178503372?v=4",
+    siteUrl: SITE_URL,
+    author: "Nathan Kimutai",
+    jobTitle: "Software Engineer & AI Engineer",
+    sameAs: [
+        GITHUB_URL,
+        LINKEDIN_URL,
+        WHATSAPP_URL,
+    ],
 }
 
 // Header Section
@@ -30,99 +70,49 @@ export const headerConfig = {
     logotext: "Portfolio.",
     actionButton: {
         text: "Resume",
-        url: "/Chirag Resume.pdf" // use full URL or Public Folder path
+        url: "/Nathan Kimutai Resume.pdf"
     },
 }
 
 // Hero Section
 export const heroConfig = {
     salutation: "Hi👋🏻 My name is",
-    firstName: "Chirag.",
+    firstName: "Nathan.",
     lastName: "",
-    position: "Fullstack Software Engineer",
+    position: "Software Engineer & AI Engineer",
     tagLine: {
-        prefixText: "I create",
-        highlightedText: "Exciting Stuff",
-        suffixText: "on the Internet."
+        prefixText: "I build",
+        highlightedText: "Intelligent Systems",
+        suffixText: "for the real world."
     },
     avatar: Avatar_180,
-    links: [
-        {
-            label: "GitHub",
-            url: "https://github.com/ChiragChrg",
-            icon: GithubIconRaw
-        },
-        {
-            label: "LinkedIn",
-            url: "https://www.linkedin.com/in/chiragchrg/",
-            icon: LinkedinIconRaw
-        },
-        {
-            label: "X",
-            url: "https://x.com/ChiragChrg",
-            icon: TwitterIconRaw
-        },
-        {
-            label: "Instagram",
-            url: "https://www.instagram.com/chiragchrg/",
-            icon: InstagramIconRaw
-        },
-        {
-            label: "Google Search",
-            url: "https://www.google.com/search?q=ChiragChrg",
-            icon: GoogleIconRaw
-        }
-    ],
+    links: socialLinks,
 }
 
 // About Section
 export const aboutConfig = {
     aboutAvatar: Avatar_250,
+    greeting: "Hey there! 👋🏻",
     description: [
-        "Hey there! 👋🏻 I'm Chirag. I build things on the internet — with a strong focus on performance, interactivity, and getting the details right.",
-        "I enjoy working on systems that aren’t static. Real-time updates, complex UIs, and applications with lots of moving parts. I naturally go deeper into problems — optimizing, refining, and chasing that \"this feels right\" moment.",
-        "I like pushing systems to their limits, understanding how they behave, and improving them to be faster, cleaner, and more reliable.",
-        "If you're building something interesting, challenging, or technically demanding… I’d love to be part of it 😄"
+        "I'm Nathan Kimutai Lotobo — a software, frontend, and AI engineer from Kenya. I design and ship applications that connect people, data, and devices, with a strong bias for systems that stay reliable and secure.",
+        "I currently lead IT at the African Union Students Platform, overseeing digital systems, access control, and technology delivery. Before that I spent years as Lead Software and Systems Engineer at Uniglobe Access, and as a freelance developer shipping websites and apps for clients.",
+        "My favourite work lives at the intersection of software, AI, and IoT — from smart greenhouse automation to crop-disease diagnosis and AI-assisted hiring. I like going deep: architecture, security, and that moment when a product finally feels right.",
+        "I'm pursuing a BSc in Computer Science at Kabarak University. If you're building something ambitious in software, AI, or infrastructure, I'd love to be part of it."
     ],
+}
+
+// Contact Section
+export const contactConfig = {
+    heading: "Let's collaborate!",
+    subtitle: "Contact me to discuss software, AI, or systems work",
+    note: "or just to say hello. 😉",
+    links: socialLinks,
 }
 
 // Footer Section
 export const footerConfig = {
     logo: LogoIcon,
-    title: "ChiragChrg | Portfolio.",
-    links: [
-        {
-            label: "GitHub",
-            url: "https://github.com/ChiragChrg",
-            icon: GithubIconRaw
-        },
-        {
-            label: "LinkedIn",
-            url: "https://www.linkedin.com/in/chiragchrg/",
-            icon: LinkedinIconRaw
-        },
-        {
-            label: "X",
-            url: "https://x.com/ChiragChrg",
-            icon: TwitterIconRaw
-        },
-        {
-            label: "Instagram",
-            url: "https://www.instagram.com/chiragchrg/",
-            icon: InstagramIconRaw
-        },
-        {
-            label: "Discord",
-            url: "https://discord.gg/WmVQjMryDz",
-            icon: DiscordIconRaw
-        },
-        {
-            label: "Google Search",
-            url: "https://www.google.com/search?q=ChiragChrg",
-            icon: GoogleIconRaw
-        }
-    ],
-    copyrightText: `© Copyright 2023-${new Date().getFullYear()
-        } ChiragChrg`
+    title: "Nathan Kimutai | Portfolio.",
+    links: socialLinks,
+    copyrightText: `© Copyright 2024-${new Date().getFullYear()} Nathan Kimutai`
 }
-

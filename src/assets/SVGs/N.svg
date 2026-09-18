@@ -1,0 +1,12 @@
+<svg width="64" height="72" viewBox="0 0 64 72" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="Gradient" x1="0" y1="0" x2="1" y2="1">
+            <stop stop-color="#6600FF" offset="0%" />
+            <stop stop-color="#ff00bf" offset="100%" />
+        </linearGradient>
+    </defs>
+    <path
+        fill="url(#Gradient)"
+        d="M8 68 V8 h13.5 L44 46.5 V8 H56 V68 H42.5 L16 29.5 V68 H8 Z"
+    />
+</svg>
