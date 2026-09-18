@@ -1,83 +1,55 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/530c2667-5dbc-4df3-824c-de37f975c833/deploy-status)](https://app.netlify.com/sites/chiragchrg/deploys)
+[![Live](https://img.shields.io/badge/Live-nathankimutai.vercel.app-6600ff?style=flat&logo=vercel&logoColor=white)](https://nathankimutai.vercel.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-##### Created : 09/04/2023
+# Nathan Kimutai | Portfolio
 
-# ChiragChrg | My Personal Portfolio | Fullstack Web Developer
-Welcome to ChiragChrg's portfolio website, your gateway to the dynamic world of full stack web development. Immerse yourself in the digital realm where my expertise in coding and design converges to create extraordinary online experiences.
+Personal portfolio of **Nathan Kimutai Lotobo** — a software, frontend, and AI engineer from Kenya. The site presents my work across web, mobile, AI, and IoT, from smart greenhouse automation to AI-assisted hiring.
 
-## 💻 Preview
-![Portfolio Preview](public/Mockup_Preview.png)
+[Live site](https://nathankimutai.vercel.app/) · [GitHub](https://github.com/kim214) · [LinkedIn](https://www.linkedin.com/in/nathan-kimutai-163a9036b/) · [Instagram](https://www.instagram.com/nathan_k.im/) · [Email](mailto:nathankimutai48@gmail.com)
 
-## 🚀 Live Demo  
-Check out the current live version of the portfolio:  
-👉 **https://chiragchrg.netlify.app**
+## Preview
 
-Preview the upcoming version here (Nightly Build - [astro branch](https://github.com/ChiragChrg/Portfolio/tree/astro)):  
-👉 **https://chiragchrg-nightly.netlify.app/**
+[![Portfolio Preview](https://image.thum.io/get/width/1200/crop/800/https://nathankimutai.vercel.app/)](https://nathankimutai.vercel.app/)
 
-### 🚧 Nightly Build in Progress  
-A fresh version is under active development—this isn’t just a revamp but a more extensible architecture designed for quick personalization:
+## About
 
-- **Templatized Setup** – Fork and adapt your own version in minutes.
-- **Custom Theme System** – Try different themes (with light/dark variants) using a theme selection dropdown—**available only in the nightly build for preview purposes.**
-- **Production Behavior** – In the stable version, the theme dropdown is disabled; a single static theme is used based on your choice in `src/config/portfolio.config.ts`.
-- **Quality Enhancements** – Performance boosts and UI refinements all around.
+I currently lead IT at the African Union Students Platform and previously worked as Lead Software and Systems Engineer at Uniglobe Access. I'm pursuing a BSc in Computer Science at Kabarak University.
 
-<br/>
+Featured projects:
 
-## 📚 Tools and Tech Stack
+- **GreenTech** — smart greenhouse platform with real-time monitoring and automated control
+- **RecruitIQ** — AI hiring assistant that scores applicants against role requirements
+- **MahindAI** — maize disease diagnosis from a leaf photo, with English and Swahili guidance
+- **AIFAA** — offline-first first-aid companion with multilingual support
+- **AUSP** — digital home of the African Union Students Platform
 
-The portfolio leverages the following technologies:
+## Tech stack
+
+This site is built with:
+
 <div align="center">
-      <a href="https://astro.build/" title="Astro"><img src="https://skillicons.dev/icons?i=astro" alt="Astro" width="40"/></a>&emsp;
-      <a href="https://preactjs.com/" title="Preact.js"><img src="https://raw.githubusercontent.com/ChiragChrg/ChiragChrg.github.io/main/icons/preactjs.svg" alt="Preact.js" width="40"/></a>&emsp;
-      <a href="https://www.typescriptlang.org/docs/" title="TypeScript"><img src="https://skillicons.dev/icons?i=typescript" alt="TypeScript" width="40"/></a>&emsp;
-      <a href="https://tailwindcss.com/docs/installation" title="TailwindCSS"><img src="https://skillicons.dev/icons?i=tailwind" alt="TailwindCSS" width="40"/></a>&emsp;
-      <a href="https://greensock.com/docs/" title="GSAP"><img src="https://raw.githubusercontent.com/ChiragChrg/ChiragChrg.github.io/main/icons/gsap.svg" alt="GSAP" width="40"/></a>&emsp;
+  <a href="https://astro.build/" title="Astro"><img src="https://skillicons.dev/icons?i=astro" alt="Astro" width="40"/></a>&emsp;
+  <a href="https://preactjs.com/" title="Preact"><img src="https://skillicons.dev/icons?i=react" alt="Preact" width="40"/></a>&emsp;
+  <a href="https://www.typescriptlang.org/docs/" title="TypeScript"><img src="https://skillicons.dev/icons?i=typescript" alt="TypeScript" width="40"/></a>&emsp;
+  <a href="https://tailwindcss.com/" title="Tailwind CSS"><img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" width="40"/></a>&emsp;
+  <a href="https://greensock.com/" title="GSAP"><img src="https://skillicons.dev/icons?i=gsap" alt="GSAP" width="40"/></a>
 </div>
 
-## 🗼 LightHouse Audit
-![LightHouse Audit Preview](public/LightHouse_Audit.jpg)
+Content and identity live in `src/config/portfolio.config.ts` and `src/config/ProjectsList.ts`.
 
-## 🛠️ Installation and Setup
+## Run locally
 
-Follow these steps to run the project locally:
+```bash
+git clone https://github.com/kim214/myportfolio.git
+cd myportfolio
+npm install
+npm run dev
+```
 
-### Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ChiragChrg/portfolio.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd portfolio
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-4. Start the development server:
-   ```bash
-   npm run dev
-   ```
+Requires Node.js 20–22.
 
-## 🌟 Features
+## License
 
-- **Optimized Performance**: Built with Astro for lightning-fast load times.
-- **Responsive Design**: Tailored for all devices using TailwindCSS.
-- **Interactive Animations**: Powered by GSAP for smooth transitions.
-- **SEO Friendly**: Enhanced visibility with Astro SEO integration.
-- **Dynamic Components**: Utilizes Preact for modular and reusable UI elements.
+This project is licensed under the [MIT License](LICENSE).
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).  
-You may use, copy, modify, and distribute this project for any purpose, provided that you:
-
-- Include the original copyright.
-- Retain the MIT license in all copies or substantial portions of the software.
-
-Attribution is appreciated but not required. If you use this project, consider giving visible credit is given to **[ChiragChrg](https://github.com/ChiragChrg)** somewhere within your project (e.g., in the README, footer, or documentation).
-
-Proper attribution helps acknowledge the effort invested in this project and upholds the values of integrity, transparency, and the open‑source community.
+The original template was created by [ChiragChrg](https://github.com/ChiragChrg/Portfolio). This repository is Nathan Kimutai’s personalized version.
