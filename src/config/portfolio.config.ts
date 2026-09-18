@@ -41,8 +41,8 @@ export const socialLinks = [
         icon: InstagramIconRaw
     },
     {
-        label: "Google Search",
-        url: "https://www.google.com/search?q=Nathan+Kimutai+Lotobo",
+        label: "Portfolio",
+        url: "https://nathankimutai.vercel.app/",
         icon: GoogleIconRaw
     }
 ];
