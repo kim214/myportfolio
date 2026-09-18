@@ -5,7 +5,7 @@ import GithubIconRaw from "@assets/SVGs/Github.svg?raw";
 import LinkedinIconRaw from "@assets/SVGs/Linkedin.svg?raw";
 import GoogleIconRaw from "@assets/SVGs/Google.svg?raw";
 import GmailIconRaw from "@assets/SVGs/Gmail.svg?raw";
-import WhatsappIconRaw from "@assets/SVGs/Whatsapp.svg?raw";
+import InstagramIconRaw from "@assets/SVGs/Instagram.svg?raw";
 
 import { LogoIcon } from "@/assets/SVGs";
 import { ThemeOptions } from "../../scripts/generateThemes";
@@ -16,7 +16,7 @@ export const themeConfig = ThemeOptions.DEFAULT;
 const GITHUB_URL = "https://github.com/kim214";
 const LINKEDIN_URL = "https://www.linkedin.com/in/nathan-kimutai-163a9036b/";
 const EMAIL = "nathankimutai48@gmail.com";
-const WHATSAPP_URL = "https://wa.me/254753390828";
+const INSTAGRAM_URL = "https://www.instagram.com/nathan_k.im/";
 const SITE_URL = "https://nathankimutai.netlify.app/";
 
 export const socialLinks = [
@@ -36,9 +36,9 @@ export const socialLinks = [
         icon: GmailIconRaw
     },
     {
-        label: "WhatsApp",
-        url: WHATSAPP_URL,
-        icon: WhatsappIconRaw
+        label: "Instagram",
+        url: INSTAGRAM_URL,
+        icon: InstagramIconRaw
     },
     {
         label: "Google Search",
@@ -61,7 +61,7 @@ export const siteConfig = {
     sameAs: [
         GITHUB_URL,
         LINKEDIN_URL,
-        WHATSAPP_URL,
+        INSTAGRAM_URL,
     ],
 }
 
