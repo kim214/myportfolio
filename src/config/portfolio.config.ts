@@ -15,7 +15,7 @@ export const themeConfig = ThemeOptions.DEFAULT;
 
 const GITHUB_URL = "https://github.com/kim214";
 const LINKEDIN_URL = "https://www.linkedin.com/in/nathan-kimutai-163a9036b/";
-const EMAIL = "nathankimutai48@gmail.com";
+export const EMAIL = "nathankimutai48@gmail.com";
 const INSTAGRAM_URL = "https://www.instagram.com/nathan_k.im/";
 const SITE_URL = "https://nathankimutai.netlify.app/";
 

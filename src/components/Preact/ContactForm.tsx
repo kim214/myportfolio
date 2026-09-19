@@ -5,7 +5,11 @@ type StatusType = {
     message: string
 }
 
-const ContactForm = () => {
+type ContactFormProps = {
+    toEmail: string
+}
+
+const ContactForm = ({ toEmail }: ContactFormProps) => {
     const [mailStatus, setMailStatus] = useState<StatusType>({ status: false, message: "" })
     const [isLoading, setisLoading] = useState<boolean>(false)
 
@@ -22,12 +26,6 @@ const ContactForm = () => {
         const email = EmailRef?.current?.value as string;
         const message = MessageRef?.current?.value as string;
 
-        const templateParams = {
-            from_name: name,
-            from_email: email,
-            message: message,
-        }
-
         try {
 
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -36,15 +34,25 @@ const ContactForm = () => {
             }
 
             setisLoading(true)
-            const { default: emailjs } = await import('@emailjs/browser')
-            const mailRes = await emailjs.send(
-                import.meta.env.PUBLIC_EMAILJS_SERVICE_ID,
-                import.meta.env.PUBLIC_EMAILJS_TEMPLATE_ID,
-                templateParams,
-                import.meta.env.PUBLIC_EMAILJS_PUBLIC_KEY
-            );
+            const mailRes = await fetch(`https://formsubmit.co/ajax/${toEmail}`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify({
+                    name,
+                    email,
+                    message,
+                    _replyto: email,
+                    _subject: `Portfolio contact from ${name}`,
+                    _template: "box",
+                    _captcha: false,
+                }),
+            })
 
-            if (mailRes.status !== 200) {
+            const result = await mailRes.json() as { success?: string | boolean }
+            if (!mailRes.ok || result.success === false || result.success === "false") {
                 throw new Error("😵 Message not Sent")
             }
 

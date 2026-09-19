@@ -3,7 +3,7 @@ import { CenterTitle } from '@components/UI';
 import { ContactForm } from '@components/Preact';
 import { ContactArt } from '@assets/SVGs';
 import { Image } from 'astro:assets';
-import { contactConfig } from '@/config/portfolio.config';
+import { contactConfig, EMAIL } from '@/config/portfolio.config';
 
 const config = contactConfig;
 ---
@@ -49,7 +49,7 @@ const config = contactConfig;
             />
         </div>
 
-        <ContactForm client:visible />
+        <ContactForm client:visible toEmail={EMAIL} />
     </div>
 </section>
 
